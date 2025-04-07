@@ -1,0 +1,519 @@
+#navbarConfig{
+
+}
+.top-bar-content{
+    margin-right: 2%;
+}
+.fontConfiNav{
+    font-size: 1.3rem;
+}
+.textConfig > h3{
+    margin-left: 7%;
+    margin-top: 2%;
+
+}
+.textConfig > div{
+    margin-left: 7%;
+
+
+}
+
+.configTop{
+    height: 800px;
+} 
+
+
+#configAnimaLandingPage {
+  color:rgb(255, 255, 255);
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#configAnimaLandingPage > div {
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#configAnimaLandingPage > div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 10s infinite;
+}
+
+#configAnimaLandingPage > div:last-of-type {
+  width:0px;
+  animation: reveal 10s infinite;
+}
+
+#configAnimaLandingPage > div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 10s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:1000px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:1000px;}
+}
+
+.configLetras {
+    font-size: 3.5rem;
+}
+
+
+/*---------------Acá estara los servicios-------------------*/
+/* Reset básico */
+.bodyServicios {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.services-section {
+  padding: 64px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grid de tarjetas */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tarjeta de servicio */
+.service-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.service-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 24px;
+  padding-bottom: 64px;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ff8800fd;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.service-description {
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.read-more {
+  color: #067fe3;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.read-more::after {
+  content: "›";
+  margin-left: 4px;
+  font-size: 20px;
+}
+
+.plus-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(to top right, #ff8800fd, #ff9900);
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------Acá estara los servicios-------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------------------------- ESTADISTICAS DE LA EMPRESA ---------------------------*/
+
+.stats {
+  background-color: #1E2833;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 80px 0;
+}
+
+.stats-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  fill: #e60523;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: baseline;
+}
+
+.stat-number .plus {
+  color: #ff0008;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.stat-label {
+  color: #9CA3AF;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .stats-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-content {
+      grid-template-columns: 1fr;
+  }
+}
+
+/*----------------------------------- ESTADISTICAS DE LA EMPRESA ---------------------------*/
+/*------------------------------------PORQUE DEBERIAS TRABAJAR CON NOSOTROS------------------*/
+
+
+.bodyTrabajarNosotros {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.image-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    height: 400px;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.line-primary {
+  height: 4px;
+  width: 48px;
+  background-color: #ffda0b;
+}
+
+.line-secondary {
+  height: 4px;
+  width: 96px;
+  background-color: #ce753a;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #4b5563;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #dc2626;
+  font-weight: 500;
+  text-decoration: none;
+  transition: gap 0.3s;
+}
+
+.read-more:hover {
+  gap: 8px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/*------------------------------------PORQUE DEBERIAS TRABAJAR CON NOSOTROS------------------*/
+.bodyFooter {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.about-text {
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a:hover {
+  color: #f47b20;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+  color: #f47b20;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.newsletter-form button {
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #f47b20;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #e06a10;
+}
+
+.tweet {
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  color: #999;
+}
+
+.tweet:last-child {
+  border-bottom: none;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.instagram-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: 1fr;
+  }
+}
