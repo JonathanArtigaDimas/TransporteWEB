@@ -11,7 +11,6 @@
 }
 .textConfig > h3{
     margin-left: 7%;
-    margin-top: 2%;
 
 }
 .textConfig > div{
@@ -23,6 +22,8 @@
 .configTop{
     height: 800px;
 } 
+
+
 
 
 
@@ -96,9 +97,9 @@
 
 
 
-@media (min-width: 414px) and (max-width: 767px) {
+@media (min-width: 250px) and (max-width: 767px) {
   .configTop{
-    height: 250px; 
+    height: auto;
 } 
 .fontConfiNav{
   font-size: 1rem;
@@ -106,13 +107,10 @@
 .configLetras {
   font-size: 1.5rem;
 }
-.textDivsBotones{
-  font-size: 2.3rem;
-}
 #franjaInfo > div {
   flex-direction: column;
-  font-size: 0.8rem;
-  gap: 0.2rem !important;
+  font-size: 0.6rem;
+  gap: 0.1rem !important;
   
 }
 .configButtonsCS{
@@ -122,8 +120,9 @@
 }
 .configDivCS{
   width: 15rem !important;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
+
 
 }
 
