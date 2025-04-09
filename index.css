@@ -129,7 +129,41 @@
 @media (min-width: 1920px){
   .configTop{
     height: 1200px;
-  } 
+  }
+  .fontConfiNav{
+    font-size: 2.3rem;
+  }
+  .configLetras {
+    font-size: 5.5rem;
+  }
+  #franjaInfo > div {
+    font-size: 1.5rem;
+    gap: 6rem !important;
+    
+  }
+  .configButtonsCS{
+    font-size: 1.6rem !important;
+    width: 40% !important;
+    
+  }
+  .configDivCS{
+    width: 40rem !important;
+    margin-top: 3rem;
+  }
+  @keyframes slidein {
+    0% { margin-left:-1000px; }
+    20% { margin-left:-1000px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:1200px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:2000px;}
+} 
 }
 
 
