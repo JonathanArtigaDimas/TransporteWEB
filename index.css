@@ -120,7 +120,7 @@
   
 }
 .configButtonsCS{
-  font-size: 0.8rem !important;
+  font-size: 1rem !important;
   width: 60% !important;
   
 }
@@ -222,7 +222,7 @@
   animation: slidein 10s infinite;
 }
 .configLetras1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 
@@ -288,7 +288,7 @@
 
 .imgLogoConfig{
   height: auto;
-  width: 150%;
+  width: 160%;
 }
 #configAnimaLandingPage {
   display: none !important;
@@ -356,12 +356,17 @@
   animation: slidein 10s infinite;
 }
 .configLetras1 {
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 .configDivCS{
-  width: 20rem !important;
+  width: 19rem !important;
   margin-top: 7rem;
-  margin-bottom: 15%;
+  margin-bottom: 0%;
+}
+.configButtonsCS{
+  font-size: 1rem !important;
+  width: 60% !important;
+  
 }
 
 
