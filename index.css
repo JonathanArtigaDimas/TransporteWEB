@@ -127,6 +127,7 @@
 .configDivCS{
   width: 20rem !important;
   margin-top: 7rem;
+  margin-bottom: 15%;
 }
 .carruselHiden{
   display: none;
@@ -289,6 +290,79 @@
   height: auto;
   width: 150%;
 }
+#configAnimaLandingPage {
+  display: none !important;
+  color:rgb(255, 255, 255);
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#configAnimaLandingPage > div {
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#configAnimaLandingPage > div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 10s infinite;
+}
+
+#configAnimaLandingPage > div:last-of-type {
+  width:0px;
+  animation: reveal 10s infinite;
+}
+
+#configAnimaLandingPage > div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 10s infinite;
+}
+
+
+#configAnimaLandingPage1 {
+  color:rgb(255, 255, 255);
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#configAnimaLandingPage1 > div {
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#configAnimaLandingPage1 > div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 10s infinite;
+}
+
+#configAnimaLandingPage1 > div:last-of-type {
+  width:0px;
+  animation: reveal 10s infinite;
+}
+
+#configAnimaLandingPage1 > div:last-of-type span {
+  margin-left:-100px;
+  animation: slidein 10s infinite;
+}
+.configLetras1 {
+  font-size: 3rem;
+}
+.configDivCS{
+  width: 20rem !important;
+  margin-top: 7rem;
+  margin-bottom: 15%;
+}
 
 
 }
@@ -321,6 +395,42 @@
   opacity: 1; /* La primera imagen es visible inicialmente */
 }
 /*------------INTENTO DE CARRUSEL-------------*/
+
+#configAnimaLandingPage1 {
+  display: none !important;
+  color:rgb(255, 255, 255);
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#configAnimaLandingPage1 > div {
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#configAnimaLandingPage1 > div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 10s infinite;
+}
+
+#configAnimaLandingPage1 > div:last-of-type {
+  width:0px;
+  animation: reveal 10s infinite;
+}
+
+#configAnimaLandingPage1 > div:last-of-type span {
+  margin-left:-100px;
+  animation: slidein 10s infinite;
+}
+.configLetras1 {
+  font-size: 3rem;
+}
 
 }
 
