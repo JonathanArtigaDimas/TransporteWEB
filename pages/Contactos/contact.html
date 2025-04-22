@@ -1,11 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../Contactos/contact.css">
 </head>
 <body>
-    
+  <div class="container">
+    <!-- Top section with blue background -->
+    <div class="top-section">
+      <!-- Background Map Image with pulse animation -->
+      <div class="map-background" id="mapBackground">
+        <img src="https://via.placeholder.com/1200x800" alt="Map background" class="map-image">
+        <div class="map-pin">
+          <i class="fas fa-map-marker-alt map-marker animate-bounce"></i>
+          <div class="ping-animation"></div>
+        </div>
+      </div>
+
+      <!-- Floating particles animation -->
+      <div class="particles-container" id="particlesContainer">
+        <!-- Particles will be added via JavaScript -->
+      </div>
+
+      <!-- Content with fade-in animation -->
+      <div class="header-content">
+        <div class="header-text" id="headerText">
+          <h2 class="title">
+            <span class="animate-text-reveal" style="animation-delay: 500ms;">Get</span>
+            <span class="animate-text-reveal" style="animation-delay: 600ms;">In</span>
+            <span class="animate-text-reveal" style="animation-delay: 700ms;">Touch</span>
+          </h2>
+          <p class="description" id="headerDescription">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section with white background -->
+    <div class="bottom-section">
+      <div class="contact-card" id="contactCard">
+        <!-- Contact Form with animated fields -->
+        <div class="form-container">
+          <div class="form-header animate-on-scroll">
+            <h3 class="form-title">Send us a Message</h3>
+            <i class="fas fa-envelope mail-icon animate-pulse"></i>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-grid">
+              <div class="form-group animate-on-scroll" style="transition-delay: 100ms;">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" value="Dexter Morgan" class="form-input">
+              </div>
+
+              <div class="form-group animate-on-scroll" style="transition-delay: 200ms;">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" value="dexter@morganandassociates.com" class="form-input">
+              </div>
+
+              <div class="form-group animate-on-scroll" style="transition-delay: 300ms;">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" id="phone" value="(800) 800 - 800 - 800" class="form-input">
+              </div>
+
+              <div class="form-group animate-on-scroll" style="transition-delay: 400ms;">
+                <label for="company" class="form-label">Company</label>
+                <input type="text" id="company" value="Morgan & Masuka Enterprises" class="form-input">
+              </div>
+
+              <div class="form-group full-width animate-on-scroll" style="transition-delay: 500ms;">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" rows="3" class="form-input">Hi, do you have a moment to talk about...</textarea>
+              </div>
+
+              <div class="button-container animate-on-scroll" style="transition-delay: 600ms;">
+                <button type="submit" class="send-button">
+                  <i class="fas fa-paper-plane send-icon"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Information with animated elements -->
+        <div class="info-container">
+          <!-- Background animated gradient -->
+          <div class="gradient-background"></div>
+          
+          <h3 class="info-title animate-on-scroll">Contact Information</h3>
+
+          <div class="info-content">
+            <div class="info-item animate-on-scroll" style="transition-delay: 100ms;">
+              <div class="info-icon-wrapper">
+                <i class="fas fa-map-marker-alt info-icon"></i>
+              </div>
+              <div class="info-text">
+                <p>300 King Street</p>
+                <p>Freeville, Toronto, YA 10023</p>
+              </div>
+            </div>
+
+            <div class="info-item animate-on-scroll" style="transition-delay: 200ms;">
+              <div class="info-icon-wrapper">
+                <i class="fas fa-phone info-icon"></i>
+              </div>
+              <div class="info-text">
+                <p>(800) 800-800-800</p>
+              </div>
+            </div>
+
+            <div class="info-item animate-on-scroll" style="transition-delay: 300ms;">
+              <div class="info-icon-wrapper">
+                <i class="fas fa-envelope info-icon"></i>
+              </div>
+              <div class="info-text">
+                <p>info@midominio.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-container animate-on-scroll" style="transition-delay: 400ms;">
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin-in social-icon"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set visibility of elements
+      setTimeout(() => {
+        document.getElementById('mapBackground').classList.add('visible');
+        document.getElementById('headerText').classList.add('visible');
+        setTimeout(() => {
+          document.getElementById('headerDescription').classList.add('visible');
+        }, 800);
+        setTimeout(() => {
+          document.getElementById('contactCard').classList.add('visible');
+        }, 300);
+      }, 100);
+
+      // Create floating particles
+      const particlesContainer = document.getElementById('particlesContainer');
+      for (let i = 0; i < 10; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle animate-float';
+        
+        // Random size
+        const size = Math.random() * 20 + 5;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        // Random position
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.left = `${Math.random() * 100}%`;
+        
+        // Random animation duration and delay
+        particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+
+      // Handle scroll animations
+      function handleScroll() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        
+        elements.forEach(element => {
+          const position = element.getBoundingClientRect().top + window.scrollY;
+          if (scrollPosition > position + 100) {
+            element.classList.add('animate-visible');
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Trigger on initial load
+
+      // Handle form field focus
+      const formInputs = document.querySelectorAll('.form-input');
+      formInputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          this.classList.add('active');
+        });
+        
+        input.addEventListener('blur', function() {
+          this.classList.remove('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

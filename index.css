@@ -261,7 +261,7 @@
 }
 .configDivCS{
   width: 18rem !important;
-  margin-top: 7rem;
+  margin-top: 4rem !important;
 }
 .carruselHiden{
   display: none;
