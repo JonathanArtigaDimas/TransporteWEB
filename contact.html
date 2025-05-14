@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contactanos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../Contactos/contact.css">
+  <link rel="icon" href="img/LogoMembretado.png" type="image/png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body class="w-100 d-flex">
     <!--FRANJA NARANJA------------------------------------------------->
@@ -45,8 +46,8 @@
      <nav class="navbar navbar-expand-lg" style="z-index: 10;" id="navbarConfig"> 
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand w-25" href="../Contactos/contact.html">
-          <img src="../../img/homelogo.png" class="imgLogoConfig">
+        <a class="navbar-brand w-25" href="contact.html">
+          <img src="img/homelogo.png" class="imgLogoConfig">
         </a>
         <!-- Botón de hamburguesa para dispositivos móviles -->
         <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,16 +57,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav mx-5">
             <li class="nav-item mx-2 fontConfiNav">
-              <a class="nav-link active text-white fw-bold" aria-current="page" href="../../index.html">Home</a>
+              <a class="nav-link active text-white fw-bold" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item fontConfiNav mx-2">
-              <a class="nav-link text-white fw-bold" href="../SobreNosotros/sobreNosotros.html">Acerca de Nosotros</a>
+              <a class="nav-link text-white fw-bold" href="sobreNosotros.html">Acerca de Nosotros</a>
             </li>
             <li class="nav-item mx-2 fontConfiNav fw-bold">
-              <a class="nav-link text-white" href="../../index.html#services">Servicios</a>
+              <a class="nav-link text-white" href="index.html#services">Servicios</a>
             </li>
             <li class="nav-item mx-2 fontConfiNav fw-bold">
-              <a class="nav-link text-white" href="../Contactos/contact.html">Contactanos</a>
+              <a class="nav-link text-white" href="contact.html">Contactanos</a>
             </li>
           </ul>
         </div>
@@ -80,7 +81,7 @@
 
       <!-- Background Map Image with pulse animation -->
       <div class="map-background" id="mapBackground">
-        <img src="../../img/imgPortadaContactos.jpg" alt="Map background" class="map-image">
+        <img src="img/imgPortadaContactos.jpg" alt="Map background" class="map-image">
         <div class="map-pin">
           <div class="ping-animation"></div>
         </div>
@@ -115,25 +116,17 @@
         <!-- Contact Form with animated fields -->
         <div class="form-container">
           <div class="form-header animate-on-scroll">
-            <h3 class="form-title">Envianos un mensaje directamente</h3>
-            <i class="fas fa-envelope mail-icon animate-pulse"></i>
+            <h3 class="form-title">Cotiza con nosostros</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill text-primary" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg>
           </div>
 
           <form class="contact-form" action="https://formsubmit.co/administracion@soluciones-legales-aa.com" method="POST">
             <div class="form-grid">
               <div class="form-group animate-on-scroll" style="transition-delay: 100ms;">
-                <label for="name" class="form-label text-black">Tu Nombre</label>
+                <label for="name" class="form-label text-black">Nombre</label>
                 <input type="text" id="nombre" name="nombre" class="form-input">
-              </div>
-
-              <div class="form-group animate-on-scroll" style="transition-delay: 200ms;">
-                <label for="email" class="form-label text-black">Correo Electronico</label>
-                <input type="email" id="email" name="email" class="form-input" required>
-              </div>
-
-              <div class="form-group animate-on-scroll" style="transition-delay: 300ms;">
-                <label for="phone" class="form-label text-black">Telefono</label>
-                <input type="tel" id="telefono" name="telefono"  class="form-input">
               </div>
 
               <div class="form-group animate-on-scroll" style="transition-delay: 400ms;">
@@ -141,14 +134,26 @@
                 <input type="text" id="empresa" name="empresa" class="form-input">
               </div>
 
+              <div class="form-group animate-on-scroll" style="transition-delay: 300ms;">
+                <label for="phone" class="form-label text-black">Telefono</label>
+                <input type="tel" id="telefono" name="telefono"  class="form-input">
+              </div>
+
+              <div class="form-group animate-on-scroll" style="transition-delay: 200ms;">
+                <label for="email" class="form-label text-black">Correo Electronico</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+
               <div class="form-group full-width animate-on-scroll" style="transition-delay: 500ms;">
-                <label for="message" class="form-label text-black">Tu Mensaje</label>
+                <label for="message" class="form-label text-black">Descripción de la carga</label>
                 <textarea id="mensaje" rows="3" name="mensaje" class="form-input" required></textarea>
               </div>
 
               <div class="button-container animate-on-scroll" style="transition-delay: 600ms;">
                 <button type="submit" class="send-button">
-                  <i class="fas fa-paper-plane send-icon"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+</svg>
                 </button>
               </div>
             </div>
@@ -165,7 +170,9 @@
           <div class="info-content">
             <div class="info-item animate-on-scroll" style="transition-delay: 100ms;">
               <div class="info-icon-wrapper">
-                <i class="fas fa-map-marker-alt info-icon"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-map-fill text-warning" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+</svg>
               </div>
               <div class="info-text">
                 <p>
@@ -179,7 +186,9 @@
 
             <div class="info-item animate-on-scroll" style="transition-delay: 200ms;">
               <div class="info-icon-wrapper">
-                <i class="fas fa-phone info-icon"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill text-warning" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
               </div>
               <div class="info-text">
                 <p>+(503) 2455 - 7177 </p>
@@ -188,7 +197,10 @@
 
             <div class="info-item animate-on-scroll" style="transition-delay: 300ms;">
               <div class="info-icon-wrapper">
-                <i class="fas fa-envelope info-icon"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope-at-fill text-warning" viewBox="0 0 16 16">
+  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+</svg>
               </div>
               <div class="info-text">
                 <a href="mailto:administracion@soluciones-legales-aa.com" style="text-decoration: none; color: white;">
@@ -197,7 +209,7 @@
               </div>
             </div>
           </div>
-
+          <!--
           <div class="social-container animate-on-scroll" style="transition-delay: 400ms;">
             <a href="#" class="social-link">
               <i class="fab fa-twitter social-icon"></i>
@@ -209,6 +221,7 @@
               <i class="fab fa-instagram social-icon"></i>
             </a>
           </div>
+          -->
         </div>
         <!-- PARTE DE INFORMACION DE LOS CONTACTOS -->
       </div>
@@ -235,12 +248,12 @@
                         <i>✉️</i> administracion@soluciones-legales-aa.com
                     </a>
                 </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Ingrese su correo electronico">
+                <form class="newsletter-form" action="https://formsubmit.co/administracion@soluciones-legales-aa.com" method="POST">
+                    <input type="email" name="Email" id="Email" placeholder="Ingrese su correo electronico">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-
+              
             <div class="footer-section">
                 <h2>Noticias Nuevas</h2>
                 <div class="tweet">
@@ -260,10 +273,10 @@
 
                   
 
-                    <img src="../../img/imgCamion1.jpg" alt="Foto que tomó Gracia">
-                    <img src="../../img/CASCADIAIMG.jpg" alt="Waterfall in nature">
-                    <img src="../../img/camionNegroyDorado.jpg" alt="Person riding motorcycle">
-                    <img src="../../img/camionHenry.jpg" alt="Couple in nature">
+                    <img src="img/imgCamion1.jpg" alt="Foto que tomó Gracia">
+                    <img src="img/CASCADIAIMG.jpg" alt="Waterfall in nature">
+                    <img src="img/camionNegroyDorado.jpg" alt="Person riding motorcycle">
+                    <img src="img/camionHenry.jpg" alt="Couple in nature">
                 </div>
             </div>
         </div>

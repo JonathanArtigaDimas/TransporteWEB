@@ -720,7 +720,7 @@
 .stat-icon {
   width: 60px;
   height: 60px;
-  fill: #e60523;
+  fill: #f97316;
 }
 
 .stat-number {
@@ -732,7 +732,7 @@
 }
 
 .stat-number .plus {
-  color: #ff0008;
+  color: #f97316;
   margin-left: 5px;
   font-size: 24px;
 }
